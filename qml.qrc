@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>EditItemFooter.qml</file>
+        <file>GreenToolButton.qml</file>
     </qresource>
 </RCC>

@@ -21,20 +21,8 @@ ToolBar {
 
         RowLayout {
             anchors.left: parent.left
-            ToolButton {
-                text: qsTr("Add")
-                width: 60
-
-                contentItem: Text {
-                    text: parent.text
-                    font: parent.font
-                    opacity: enabled ? 1.0 : 0.3
-                    color: root.down ? "#17a81a" : "#21be2b"
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    elide: Text.ElideMiddle
-                }
-
+            GreenToolButton {
+                buttonText: "Add"
             }
-        }
     }
+}
