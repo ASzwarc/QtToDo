@@ -24,5 +24,7 @@ ApplicationWindow {
 
     footer: EditItemFooter {
         id: editItemFooter
+        borderColor: "#21be2b"
+        height: 40
     }
 }

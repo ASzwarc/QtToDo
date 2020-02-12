@@ -4,25 +4,29 @@ import QtQuick.Layouts 1.12
 
 ToolBar {
     id: root
-    property int footerHeight: 40
 
-        background: Rectangle {
-            implicitHeight: root.footerHeight
-            color: "#eeeeee"
+    property alias borderColor: toolBottomBorder.color
 
-            Rectangle {
-                width: parent.width
-                height: 3
-                anchors.bottom: parent.bottom
-                color: "#21be2b"
-                border.color: "#21be2b"
-            }
+    background: Rectangle {
+        id: toolBackground
+
+        height: root.height
+        color: "#eeeeee"
+        Rectangle {
+            id: toolBottomBorder
+
+            width: parent.width
+            height: 3
+            anchors.bottom: parent.bottom
+            border.color: toolBottomBorder.color
         }
-
-        RowLayout {
-            anchors.left: parent.left
+    }
+    RowLayout {
+        anchors.left: root.left
             GreenToolButton {
-                buttonText: "Add"
-            }
+            buttonText: "Add"
+            height: root.height
+            width: 60
+        }
     }
 }

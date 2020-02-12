@@ -11,10 +11,22 @@ ToolButton {
 
     contentItem: Text {
         id: textItem
+
+        height: root.height
         opacity: enabled ? 1.0 : 0.3
         color: root.down ? root.colorOn : root.colorOff
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideMiddle
+    }
+
+    background: Rectangle {
+        id: buttonBackground
+
+        implicitHeight: root.height
+        implicitWidth: root.width
+        color: Qt.darker("#333333333", root.enabled && (root.checked || root.highlighted) ? 1.5 : 1.0)
+        opacity: enabled ? 1.0 : 0.3
+        visible: root.down || (root.enabled && (root.checked || root.highlighted))
     }
 }
