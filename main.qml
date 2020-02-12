@@ -21,4 +21,8 @@ ApplicationWindow {
             Action { text: qsTr("Quit") }
         }
     }
+
+    footer: EditItemFooter {
+        id: editItemFooter
+    }
 }
