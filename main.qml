@@ -9,17 +9,8 @@ ApplicationWindow {
     height: 480
     title: qsTr("Hello World")
 
-    menuBar: MenuBar {
-        Menu {
-            id: fileMenu
-            title: qsTr("File")
-            Action { text: qsTr("New...") }
-            Action { text: qsTr("Open...") }
-            Action { text: qsTr("Save") }
-            Action { text: qsTr("Save As...") }
-            MenuSeparator {}
-            Action { text: qsTr("Quit") }
-        }
+    menuBar: GreenMenuBar {
+
     }
 
     footer: EditItemFooter {

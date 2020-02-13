@@ -4,5 +4,6 @@
         <file>EditItemFooter.qml</file>
         <file>GreenToolButton.qml</file>
         <file>GreenInputField.qml</file>
+        <file>GreenMenuBar.qml</file>
     </qresource>
 </RCC>
