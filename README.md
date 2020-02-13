@@ -4,6 +4,7 @@ ToDo App that was used to play around with Qt and QML
 ## Frontend:
 - [ ] Menu bar for creating new list, opening old one and saving
 	- [ ] Dialog windows
+	- [x] Menu bar design
 - [ ] Delegate item for representation of single task
 	- [ ] Text field for description
 	- [ ] Priority
@@ -11,7 +12,7 @@ ToDo App that was used to play around with Qt and QML
 	- [ ] Button for marking if it's done
 	- [ ] Edit button
 - [ ] ListView for displaying tasks
-- [ ] Footer with inputs for creating new tasks
+- [x] Footer with inputs for creating new tasks
 ## Backend
 - [ ] Saving lists in YAML?
 - [ ] Reading file
