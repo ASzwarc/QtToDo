@@ -10,7 +10,7 @@ ApplicationWindow {
     title: qsTr("Hello World")
 
     menuBar: GreenMenuBar {
-
+        height: 40
     }
 
     footer: EditItemFooter {
