@@ -28,6 +28,11 @@ ToolBar {
             height: root.height
             width: 60
         }
+        GreenToolButton {
+            buttonText: "Delete"
+            height: root.height
+            width: 60
+        }
         GreenInputField {
             placeholderText: qsTr("Enter task description")
             textFieldWidth: 400
