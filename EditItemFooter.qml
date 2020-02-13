@@ -23,10 +23,15 @@ ToolBar {
     }
     RowLayout {
         anchors.left: root.left
-            GreenToolButton {
+        GreenToolButton {
             buttonText: "Add"
             height: root.height
             width: 60
+        }
+        GreenInputField {
+            placeholderText: qsTr("Enter task description")
+            textFieldWidth: 400
+            height: root.height
         }
     }
 }
